@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Blinker:wght@100;200;300;400;600;700;800;900&family=Oldenburg&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <!--<div class="wrap">
+      <div class="lighting-1"></div>
+    </div>
+    <div class="wrap">
+      <div class="lighting-2"></div>
+    </div>
+    <div class="wrap">
+      <div class="lighting-3"></div>
+    </div>
+    <div class="wrap">
+      <div class="lighting-4"></div>
+    </div>
+    <div class="wrap">
+      <div class="lighting-5"></div>
+    </div>
+    <div class="wrap">
+      <div class="lighting-6"></div>
+    </div>-->
+    <div class="weather-app-container">
+      <header>
+        <form action="" class="input-city-form" id="input-city-form">
+          <input
+            type="text"
+            placeholder="Enter a City...."
+            required
+            autofocus
+            class="input-city-input-box"
+            id="input-city-input-box"
+          />
+          <input
+            type="submit"
+            value="Search"
+            class="input-city-submit-button"
+            id="input-city-submit-button"
+          />
+        </form>
+      </header>
+      <main class="weather-details-container">
+        <div class="weather-details">
+          <h1 class="current-city" id="current-city"></h1>
+          <p class="weather-conditions-and-time">
+            <span id="time"> <strong></strong></span>,
+            <span id="condition"></span>
+            <br />
+            Humidity: <strong id="humidity"></strong>, Wind:
+            <strong id="wind-speed">km/h</strong>
+          </p>
+        </div>
+        <div class="temperature-display-container">
+          <div class="temperature-icon" id="temperature-icon"></div>
+          <div class="current-temperature" id="current-temperature">9</div>
+          <div class="temperature-unit">°C</div>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/BatyaFrankel/Weather-App" target="_blank">
+          Batya Frankel</a
+        >, code hosted on
+        <a href="https://github.com/BatyaFrankel" target="_blank">GitHub</a>
+        and website hosted
+        <a href="https://batya-weather-app.netlify.app/" target="_blank"
+          >on Netlify</a
+        >
+      </footer>
+    </div>
+  </body>
+  <script src="src/index.js"></script>
+</html>
