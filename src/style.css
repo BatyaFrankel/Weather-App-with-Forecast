@@ -113,7 +113,7 @@ h1 {
   min-width: fit-content;
 }
 
-.weather-forcast-container {
+.weather-forecast-container {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #4560fc23;
@@ -121,16 +121,16 @@ h1 {
   margin: auto;
 }
 
-.weather-forcast-date {
+.weather-forecast-date {
   text-align: center;
   color: #3b55ea;
   text-shadow: 1px 1px 1px #91919125;
 }
-.weather-forcast-icon {
+.weather-forecast-icon {
   text-align: center;
   font-size: 50px;
 }
-.weather-forcast-temperatures {
+.weather-forecast-temperatures {
   display: flex;
   color: #3b55ea;
   justify-content: space-around;
@@ -145,26 +145,3 @@ footer {
 footer a {
   color: #3b55ea;
 }
-/* #C3C9E9
-#6C91C2
-#373F47
-#8B8982
-#AAABBC
-
-
-#0C848F    #545e75 
-#F8FCFF    #66C3F4
-#FEFEFE    #D7CAB0
-#FDFCF6    #E0C762
-#FEF6F1    #F3732F
-
-
-
-
-
-
-
-h1 {
-	
-	
-}*/
