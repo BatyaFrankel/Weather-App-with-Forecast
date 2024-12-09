@@ -133,8 +133,8 @@ h1 {
 .weather-forecast-temperatures {
   display: flex;
   color: #3b55ea;
-  justify-content: space-around;
   text-shadow: 1px 1px 1px #91919125;
+  gap: 18px;
 }
 
 footer {

@@ -2,7 +2,6 @@ function search(city) {
   let apiKey = `57b366cc3c6f14127edbbo64a0t02b0a`;
   let unit = `metric`;
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&unit=${unit}`;
-  console.log(apiUrl);
   axios.get(apiUrl).then(displayRefreash);
 }
 
@@ -35,6 +34,8 @@ function displayRefreash(responce) {
   let currentDate = new Date(responce.data.time * 1000);
 
   dateElement.innerHTML = dateFormat(currentDate);
+
+  getForecast(responce.data.city);
 }
 function dateFormat(date) {
   let now = date;
@@ -54,7 +55,15 @@ function dateFormat(date) {
   return `${day} ${hour}:${min}`;
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = `57b366cc3c6f14127edbbo64a0t02b0a`;
+  let unit = `metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&unit=${unit}`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(responce) {
+  console.log(responce);
   let days = ["Tomorrow", "Tuesday", "Wednesday", "Thursday", "Friday"];
   let forecastHtml = "";
 
