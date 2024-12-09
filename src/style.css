@@ -132,9 +132,10 @@ h1 {
 }
 .weather-forecast-temperatures {
   display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
   color: #3b55ea;
   text-shadow: 1px 1px 1px #91919125;
-  gap: 18px;
 }
 
 footer {
